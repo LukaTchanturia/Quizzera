@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzera.HomePageScene">
+   <children>
+      <VBox alignment="CENTER" layoutX="375.0" layoutY="42.0" prefHeight="808.0" prefWidth="851.0" spacing="15.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+         <children>
+            <ImageView fitHeight="256.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets right="15.0" />
+               </VBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../images/adminquiz.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="adminQuizButton" mnemonicParsing="false" onAction="#adminQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Admin">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/communityquiz.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="communityQuizButton" mnemonicParsing="false" onAction="#communityQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes creted by Community">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/aiquiz.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Button fx:id="AIQuizButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="210.0" text="Generate Quiz with AI">
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="782.0" styleClass="ai-info-label" text="*Note: in this mode, you can choose category and AI will create brand new quizz instantly!" />
+                  <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="782.0" styleClass="ai-info-label" text="*Note: Users with more than 20 quizzes taken or max score taken more than 10 times, can create a quizz!" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox layoutX="1.0" layoutY="-2.0" prefHeight="32.0" prefWidth="850.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/leaderboard.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="leaderboardButton" mnemonicParsing="false" onAction="#leaderboardButtonClicked" prefHeight="40.0" prefWidth="120.0" text="Leaderboard" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/statsicon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="statsButton" mnemonicParsing="false" onAction="#yourStatsButtonClicked" prefHeight="32.0" prefWidth="116.0" text="Your stats" />
+            <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/logouticon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#logOutButtonClicked" prefHeight="42.0" prefWidth="120.0" text="Log Out" />
+            <ImageView fx:id="createQuizImageView" fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/createquizicon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="createQuizButton" mnemonicParsing="false" onAction="#createQuizButtonClicked" prefHeight="42.0" prefWidth="120.0" text="Create quiz" />
+            <Label fx:id="usernameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="120.0" styleClass="username-label" />
+         </children>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

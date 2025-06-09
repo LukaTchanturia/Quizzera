@@ -1,0 +1,138 @@
+.root {
+    -fx-background-color: #FFC107;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #222;
+    -fx-font-size: 16px;
+}
+
+.label-header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+}
+
+.text-field, .password-field {
+    -fx-background-color: white;
+    -fx-border-color: #0077cc;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5;
+}
+
+.button {
+    -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6);
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+.button-signup {
+    -fx-background-color: #ff5252;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #cccccc;
+}
+.wrong-label {
+        -fx-text-fill: #ff4c4c;
+        -fx-font-size: 14px;
+        -fx-font-weight: bold;
+        -fx-background-color: #ffe6e6;
+        -fx-padding: 6 12 6 12;
+        -fx-border-color: #ff0000;
+        -fx-border-width: 1px;
+        -fx-border-radius: 6px;
+        -fx-background-radius: 6px;
+
+}
+.ai-info-label {
+    -fx-text-fill: #888888;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+    -fx-text-alignment: center;
+}
+.username-label{
+-fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+    -fx-padding: 4 12 4 12;
+    -fx-background-color: #e0f3ff;
+    -fx-background-radius: 8;
+    -fx-border-color: #90caf9;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+.leaderboard-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-padding: 6px 12px;
+    -fx-background-color: #f0f0f0;
+    -fx-background-radius: 8px;
+    -fx-pref-width: 280;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+.stats-header-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1a1a1a;
+    -fx-padding: 10px 0 4px 0;
+}
+.stats-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+    -fx-padding: 3px 0;
+}
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+#questionsVBox {
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-radius: 10;
+}
+
+
+
+
+
+.question-card {
+    -fx-background-color: #fff8e1;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.08), 6, 0, 0, 4);
+}
+
+/* Input fields inside the card */
+.question-card .text-field,
+.question-card .text-area {
+    -fx-background-color: #fffde7;
+    -fx-border-color: #c0a744;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-padding: 6 10;
+}
+
+/* Highlight on focus */
+.text-field:focused,
+.text-area:focused {
+    -fx-border-color: #ffb300;
+    -fx-background-color: #fff9c4;
+}
