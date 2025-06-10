@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="850.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzera.CommunityQuizScene">
    <children>
       <VBox alignment="CENTER" layoutX="368.0" layoutY="258.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -19,7 +18,7 @@
             </Label>
             <ScrollPane prefHeight="530.0" prefWidth="850.0">
                <content>
-                  <VBox fx:id="communityVbox" alignment="CENTER" prefHeight="530.0" prefWidth="500.0" />
+                  <VBox fx:id="communityVbox" alignment="CENTER" prefHeight="530.0" prefWidth="500.0" spacing="25.0" />
                </content>
             </ScrollPane>
             <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="33.0" prefWidth="133.0" text="Back" />

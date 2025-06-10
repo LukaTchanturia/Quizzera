@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="850.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzera.AdminQuizScene">
    <children>
       <VBox alignment="CENTER" layoutX="401.0" layoutY="305.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -20,7 +19,7 @@
             </Label>
             <ScrollPane prefHeight="530.0" prefWidth="850.0">
                <content>
-                  <VBox fx:id="adminQuizVbox" alignment="CENTER" prefHeight="530.0" prefWidth="500.0">
+                  <VBox fx:id="adminQuizVbox" alignment="CENTER" prefHeight="530.0" prefWidth="500.0" spacing="25.0">
                      <padding>
                         <Insets top="10.0" />
                      </padding>
