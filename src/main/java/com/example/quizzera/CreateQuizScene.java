@@ -122,7 +122,7 @@ public class CreateQuizScene implements Initializable {
     }
 
 
-    private void showAlert(Alert.AlertType type, String title, String msg) {
+    public static void showAlert(Alert.AlertType type, String title, String msg) {
         Alert alert = new Alert(type);
         alert.setTitle(title);
         alert.setHeaderText(null);

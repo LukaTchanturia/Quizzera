@@ -118,7 +118,7 @@
     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.08), 6, 0, 0, 4);
 }
 
-/* Input fields inside the card */
+
 .question-card .text-field,
 .question-card .text-area {
     -fx-background-color: #fffde7;
@@ -130,9 +130,19 @@
     -fx-padding: 6 10;
 }
 
-/* Highlight on focus */
+
 .text-field:focused,
 .text-area:focused {
     -fx-border-color: #ffb300;
     -fx-background-color: #fff9c4;
+}
+
+.radio-button {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-padding: 5 10 5 10;
+}
+
+.radio-button:selected {
+    -fx-mark-color: #0078D7;
 }

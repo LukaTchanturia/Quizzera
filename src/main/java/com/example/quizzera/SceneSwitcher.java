@@ -18,4 +18,17 @@ public class SceneSwitcher {
         stage.setScene(scene);
         stage.show();
     }
+
+    public static <T> T switchSceneAndGetController(ActionEvent event, String fxmlFileName) throws IOException {
+        FXMLLoader loader = new FXMLLoader(SceneSwitcher.class.getResource(fxmlFileName));
+        Parent root = loader.load();
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add(SceneSwitcher.class.getResource("style.css").toExternalForm());
+        stage.setScene(scene);
+        stage.show();
+        return loader.getController();
+    }
+
+
 }

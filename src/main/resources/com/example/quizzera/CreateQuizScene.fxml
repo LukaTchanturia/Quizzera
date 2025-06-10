@@ -22,7 +22,7 @@
       </VBox>
       <ScrollPane layoutY="198.0" prefHeight="552.0" prefWidth="850.0">
          <content>
-            <VBox fx:id="questionsVbox" prefHeight="388.0" prefWidth="519.0" />
+            <VBox fx:id="questionsVbox" prefHeight="452.0" prefWidth="625.0" />
          </content>
       </ScrollPane>
       <Button layoutX="570.0" layoutY="775.0" mnemonicParsing="false" onAction="#submitButtonClicked" prefHeight="37.0" prefWidth="157.0" text="Submit Quiz">

@@ -54,7 +54,7 @@
                               <Insets right="15.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button fx:id="communityQuizButton" mnemonicParsing="false" onAction="#communityQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes creted by Community">
+                        <Button fx:id="communityQuizButton" mnemonicParsing="false" onAction="#communityQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Community">
                            <HBox.margin>
                               <Insets right="20.0" />
                            </HBox.margin>

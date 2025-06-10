@@ -16,6 +16,7 @@ public class AdminQuizScene implements Initializable {
     @FXML
     private void backButtonClicked(ActionEvent event) throws Exception {
         SceneSwitcher.switchScene(event, "HomePageScene.fxml");
+
     }
 
     @Override
@@ -25,17 +26,23 @@ public class AdminQuizScene implements Initializable {
             quizStatement.setString(1, "admin");
             ResultSet quizRS = quizStatement.executeQuery();
             while (quizRS.next()){
-                Button button = new Button(quizRS.getString("title")+ quizRS.getInt("id"));
-                button.setStyle("-fx-background-color: linear-gradient(to bottom, #ffffff, #e6e6e6);"
-                        + "-fx-font-weight: bold;"
-                        + "-fx-font-size: 14px;"
-                        + "-fx-text-fill: #333;"
-                        + "-fx-background-radius: 10;");
+                int quizId = quizRS.getInt("id");
+                String quizTitle = quizRS.getString("title");
+                Button button = new Button(quizTitle);
+                button.setStyle(".button");
+                button.setOnAction(event1 -> {
+                    try {
+                        QuizScene quizController = SceneSwitcher.switchSceneAndGetController(event1, "QuizScene.fxml");
+                        quizController.setQuizData(quizId,quizTitle);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
                 adminQuizVbox.getChildren().add(button);
+
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
-
 }

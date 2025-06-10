@@ -7,6 +7,7 @@ public class LoadedUser {
     public static boolean isAdmin;
     public static int quizzesTaken;
     public static int maxScoreTakenTimes;
+    public static int currentScoreInLoadedQuiz = 0;
     public static void loadUser(int id, String username, String password, boolean isAdmin, int quizzesTaken, int maxScoreTakenTimes){
         LoadedUser.id = id;
         LoadedUser.username = username;
@@ -22,5 +23,9 @@ public class LoadedUser {
         isAdmin = false;
         quizzesTaken = 0;
         maxScoreTakenTimes = 0;
+        currentScoreInLoadedQuiz = 0;
+    }
+    public static void resetCurrentScoreInLoadedQuiz(){
+        currentScoreInLoadedQuiz = 0;
     }
 }

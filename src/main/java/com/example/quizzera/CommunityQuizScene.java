@@ -22,16 +22,22 @@ public class CommunityQuizScene implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try (Connection connection = DriverManager.getConnection(MainAPP.url,MainAPP.username,MainAPP.password)){
-            PreparedStatement quizStatement = connection.prepareStatement("SELECT title FROM quizzes where created_by != ?");
+            PreparedStatement quizStatement = connection.prepareStatement("SELECT id,title FROM quizzes where created_by != ?");
             quizStatement.setString(1, "admin");
             ResultSet quizRS = quizStatement.executeQuery();
             while (quizRS.next()){
+                int quizId = quizRS.getInt("id");
+                String quizTitle = quizRS.getString("title");
                 Button button = new Button(quizRS.getString("title"));
-                button.setStyle("-fx-background-color: linear-gradient(to bottom, #ffffff, #e6e6e6);"
-                        + "-fx-font-weight: bold;"
-                        + "-fx-font-size: 14px;"
-                        + "-fx-text-fill: #333;"
-                        + "-fx-background-radius: 10;");
+                button.setStyle(".button");
+                button.setOnAction(event1 -> {
+                    try {
+                        QuizScene quizController = SceneSwitcher.switchSceneAndGetController(event1, "QuizScene.fxml");
+                        quizController.setQuizData(quizId,quizTitle);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                });
                 communityVbox.getChildren().add(button);
             }
         } catch (SQLException e) {
