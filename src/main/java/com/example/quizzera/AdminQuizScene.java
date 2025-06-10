@@ -37,4 +37,5 @@ public class AdminQuizScene implements Initializable {
             throw new RuntimeException(e);
         }
     }
+
 }
