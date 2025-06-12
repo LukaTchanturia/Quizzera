@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS users (
     quizzes_taken INT DEFAULT 0,
     max_score_taken_times INT DEFAULT 0
 );
+INSERT INTO users (username, password, is_admin, quizzes_taken, max_score_taken_times) VALUES
+('admin', '$2a$10$dTNmL6IbLaRcssJvUmJ3q.2a/.8AS..756x16PuKeFbhk.YJtr6Wm', TRUE, 0, 0);
 
 -- QUIZZES TABLE
 CREATE TABLE IF NOT EXISTS quizzes (
