@@ -21,3 +21,7 @@ git clone https://github.com/your-username/Quizzera.git
 cd Quizzera
 ./setup.bat
 
+
+
+if mysql command is not recognized, make sure to add bin directory to path
+
