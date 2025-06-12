@@ -12,6 +12,9 @@ Welcome to **Quizzერა**, a JavaFX-based quiz application where users can t
 
 ---
 
+if mysql command is not recognized, make sure to add bin directory to path
+
+
 ## ⚙️ How to Run
 
 ### 🛠️ 1. Clone the project
@@ -23,5 +26,4 @@ cd Quizzera
 
 
 
-if mysql command is not recognized, make sure to add bin directory to path
 
