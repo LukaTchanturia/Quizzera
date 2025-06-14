@@ -72,8 +72,13 @@ public class QuizQuestionScene implements Initializable {
                 String selectedAnswer = getSelectedAnswer();
                 if (isCorrectAnswerSelected()) {
                     LoadedUser.currentScoreInLoadedQuiz++;
+
                 }
+                showAlert(Alert.AlertType.INFORMATION,"Submitted answer", "Your answer: " + selectedAnswer + "\nCorrect answer: " + LoadedQuiz.correctAnswers.get(LoadedQuiz.currentQuestionNumber-1));
+
                 LoadedQuiz.currentQuestionNumber++;
+
+
                 SceneSwitcher.switchScene(event, "QuizQuestionScene.fxml");
             }
 
@@ -87,6 +92,7 @@ public class QuizQuestionScene implements Initializable {
                     if (gotMaxScore()) {
                         LoadedUser.maxScoreTakenTimes++;
                     }
+                    showAlert(Alert.AlertType.INFORMATION,"Submitted answer", "Your answer: " + selectedAnswer + "\nCorrect answer: " + LoadedQuiz.correctAnswers.get(LoadedQuiz.currentQuestionNumber-1));
                 }
                 LoadedUser.quizzesTaken++;
                 CreateQuizScene.showAlert(Alert.AlertType.INFORMATION, "Quiz Completed", "Congratulations! You have completed the quiz successfully \n" +
@@ -131,6 +137,13 @@ public class QuizQuestionScene implements Initializable {
 
     private boolean gotMaxScore() {
         return LoadedUser.currentScoreInLoadedQuiz == 10;
+    }
+    private void showAlert(Alert.AlertType type, String title, String msg) {
+        Alert alert = new Alert(type);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(msg);
+        alert.showAndWait();
     }
 }
 
