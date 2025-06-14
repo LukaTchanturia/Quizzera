@@ -16,9 +16,9 @@ public class MainAPP extends Application {
     public static int red = 255;
     public static int green = 196;
     public static int blue = 0;
-    public static String url = "jdbc:mysql://localhost:3306/quizzera";
+    public static String url = "jdbc:mysql://34.89.219.5:3306/quizzera?useSSL=false&serverTimezone=UTC";
     public static String username = "root";
-    public static String password = "password";
+    public static String password = "password123";
 
     @Override
     public void start(Stage stage) throws IOException {
