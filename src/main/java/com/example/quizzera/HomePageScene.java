@@ -9,6 +9,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -84,6 +85,10 @@ public class HomePageScene implements Initializable {
     @FXML
     private void communityQuizButtonClicked(ActionEvent event) throws Exception{
         SceneSwitcher.switchScene(event, "CommunityQuizScene.fxml");
+    }
+    @FXML
+    private void AIQuizButtonClicked(ActionEvent event) throws IOException {
+        SceneSwitcher.switchScene(event,"AIQuizScene.fxml");
     }
 
     @Override

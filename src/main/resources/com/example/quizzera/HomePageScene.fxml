@@ -34,7 +34,7 @@
                               <Image url="@../../../images/adminquiz.png" />
                            </image>
                         </ImageView>
-                        <Button fx:id="adminQuizButton" mnemonicParsing="false" onAction="#adminQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Admin">
+                        <Button fx:id="adminQuizButton" alignment="CENTER" mnemonicParsing="false" onAction="#adminQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Admin">
                            <font>
                               <Font size="13.0" />
                            </font>
@@ -54,7 +54,7 @@
                               <Insets right="15.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button fx:id="communityQuizButton" mnemonicParsing="false" onAction="#communityQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Community">
+                        <Button fx:id="communityQuizButton" alignment="CENTER" mnemonicParsing="false" onAction="#communityQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Quizzes created by Community">
                            <HBox.margin>
                               <Insets right="20.0" />
                            </HBox.margin>
@@ -71,7 +71,7 @@
                               <Insets right="15.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button fx:id="AIQuizButton" mnemonicParsing="false" prefHeight="40.0" prefWidth="210.0" text="Generate Quiz with AI">
+                        <Button fx:id="AIQuizButton" alignment="CENTER" mnemonicParsing="false" onAction="#AIQuizButtonClicked" prefHeight="40.0" prefWidth="210.0" text="Generate Quiz with AI">
                            <HBox.margin>
                               <Insets right="20.0" />
                            </HBox.margin>
