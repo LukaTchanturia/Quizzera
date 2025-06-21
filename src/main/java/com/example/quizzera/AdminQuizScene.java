@@ -52,7 +52,7 @@ public class AdminQuizScene implements Initializable {
                         alert.showAndWait().ifPresent(response -> {
                             if (response == yesButton) {
                                 deleteQuizFromDatabase(quizId);
-                                initialize(url, resourceBundle); // Refresh quiz list
+                                initialize(url, resourceBundle);
                             }
                         });
                     });

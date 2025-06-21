@@ -28,7 +28,7 @@ public class AIQuizScene {
                         "\". Each should have 4 answer choices and clearly show the correct answer like:\n" +
                         "[{\"question\":\"...\",\"answers\":[\"A\",\"B\",\"C\",\"D\"],\"correct\":\"B\"},...]";
 
-                String responseJson = GeminiService.getAIQuiz(prompt); // <- we’ll write this next
+                String responseJson = GeminiService.getAIQuiz(prompt);
 
                 JSONArray jsonArray = new JSONArray(responseJson);
 

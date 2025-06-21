@@ -39,11 +39,12 @@ public class QuizScene implements Initializable {
 
 
     public void setQuizData(int quizId,String quizTitle) {
-        quizTitleLabel.setText(quizTitle);
+
         LoadedQuiz.id = quizId;
         LoadedQuiz.title = quizTitle;
         LoadedQuiz.currentQuestionNumber = 1;
         LoadedQuiz.created_by = getQuizCreatedBy();
+        quizTitleLabel.setText(quizTitle + " by " + LoadedQuiz.created_by);
         try (Connection connection = DriverManager.getConnection(MainAPP.url,MainAPP.username,MainAPP.password)){
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM questions WHERE quiz_id = ?");
             preparedStatement.setInt(1,quizId);
