@@ -8,12 +8,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="850.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizzera.AIQuizScene">
    <children>
       <VBox alignment="CENTER" layoutX="389.0" layoutY="211.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Type in theme you want AI to generate your quizz. EG: &quot;World Capitals">
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="675.0" text="Type in theme you want AI to generate your quizz. E.G: &quot;World Capitals&quot;">
                <font>
                   <Font size="21.0" />
                </font>
