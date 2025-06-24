@@ -41,3 +41,6 @@
 - BCrypt
 - Gemini API
 - CSS
+
+- IMPORTANT NOTE!!!!!!!!!!!!!!!!!!
+- არსებობს ერთადერთი ადმინი იუზერნეიმით:"admin" და  პაროლით : "admin123"

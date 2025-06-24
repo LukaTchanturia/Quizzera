@@ -41,3 +41,6 @@
 - BCrypt
 - Gemini API
 - CSS
+
+- IMPORTANT NOTE!!!!!!!!!!!!!!!!!!
+- There is only one admin with the username of : "admin" and password : "admin123"
