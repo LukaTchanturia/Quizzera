@@ -44,3 +44,4 @@
 
 - IMPORTANT NOTE!!!!!!!!!!!!!!!!!!
 - There is only one admin with the username of : "admin" and password : "admin123"
+- If you want to log in in user account which has unlocked milestones, use account username2, password: password2

@@ -12,7 +12,7 @@
    <children>
       <VBox alignment="CENTER" layoutX="389.0" layoutY="211.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label alignment="CENTER" prefHeight="31.0" prefWidth="675.0" text="Type in theme you want AI to generate your quizz. E.G: &quot;World Capitals&quot;">
+            <Label alignment="CENTER" prefHeight="31.0" prefWidth="728.0" text="Type in theme you want AI to generate your quiz about E.G: &quot;World Capitals&quot;">
                <font>
                   <Font size="21.0" />
                </font>

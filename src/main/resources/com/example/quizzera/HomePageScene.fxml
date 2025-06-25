@@ -79,7 +79,7 @@
                      </children>
                   </HBox>
                   <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="782.0" styleClass="ai-info-label" text="*Note: in this mode, you can choose category and AI will create brand new quizz instantly!" />
-                  <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="782.0" styleClass="ai-info-label" text="*Note: Users with more than 20 quizzes taken or max score taken more than 10 times, can create a quizz!" />
+                  <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="782.0" styleClass="ai-info-label" text="*Note: Users with more than 20 quizzes taken or max score taken more than 10 times, can create a quiz!" />
                </children>
             </VBox>
          </children>
